@@ -2,7 +2,7 @@ import { Menu, ShoppingBag } from "lucide-react";
 
 const Navbar = () => {
   return (
-    <div className="flex w-full items-center justify-between px-12 py-8 text-slate-300">
+    <div className="fixed z-10 flex w-full items-center justify-between px-12 py-8 text-slate-300">
       <div className="font-family-mono flex cursor-pointer items-center gap-1 bg-transparent p-2 text-base transition-all duration-300 hover:bg-slate-100/25">
         <Menu />
         MENU
