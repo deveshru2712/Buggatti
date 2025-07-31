@@ -2,8 +2,8 @@ import { Menu, ShoppingBag } from "lucide-react";
 
 const Navbar = () => {
   return (
-    <div className="fixed z-10 flex w-full items-center justify-between px-12 py-8 text-slate-300">
-      <div className="font-family-mono flex cursor-pointer items-center gap-1 bg-transparent p-2 text-base transition-all duration-300 hover:bg-slate-100/25">
+    <div className="fixed z-20 flex w-full items-center justify-between p-4 text-slate-300 md:px-12 md:py-8">
+      <div className="font-family-mono flex cursor-pointer items-center gap-1 rounded-md bg-transparent p-2 text-base transition-all duration-300 hover:bg-slate-100/25">
         <Menu />
         MENU
       </div>
@@ -13,7 +13,7 @@ const Navbar = () => {
       >
         BUGATTI
       </a>
-      <div className="font-family-mono flex cursor-pointer items-center gap-1.5 bg-transparent p-2 text-base transition-all duration-300 hover:bg-slate-100/25">
+      <div className="font-family-mono flex cursor-pointer items-center gap-1.5 rounded-md bg-transparent p-2 text-base transition-all duration-300 hover:bg-slate-100/25">
         STORE
         <ShoppingBag className="mb-1 text-slate-400" size={24} />
       </div>
