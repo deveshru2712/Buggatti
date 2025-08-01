@@ -3,14 +3,14 @@ import { motion } from "motion/react";
 const Hero = () => {
   return (
     <motion.div
-      initial={{ scale: 1, opacity: 0, y: 0, filter: `blur(10px)` }}
-      animate={{ scale: 1.5, opacity: 100, y: 50, filter: `blur(0px)` }}
+      initial={{ scale: 0.8, opacity: 0, y: -50, filter: `blur(10px)` }}
+      animate={{ scale: 1, opacity: 100, y: 0, filter: `blur(0px)` }}
       transition={{
-        duration: 0.6,
-        delay: 0.2,
+        duration: 0.5,
+        delay: 0.1,
         ease: "easeInOut",
       }}
-      className={`pointer-events-none absolute inset-0 top-0 z-10 flex items-center justify-center`}
+      className="pointer-events-none absolute inset-0 -top-30 z-10"
     >
       <video
         src="./hero_video.mp4"
@@ -18,7 +18,7 @@ const Hero = () => {
         muted
         controls={false}
         loop
-        className="h-[400px] w-full object-cover md:h-[600px]"
+        className="h-[650px] w-full object-cover md:h-[600px]"
       />
     </motion.div>
   );
