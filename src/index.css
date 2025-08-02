@@ -1,5 +1,36 @@
 @import "tailwindcss";
 
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+.lenis.lenis-smooth iframe {
+  pointer-events: none;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::webkit-scroll ::-webkit-scrollbar-track {
+  background: #2c2c2c;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #868686;
+  border-radius: 6px;
+  border: 2px solid #a5a2a2;
+}
+
 @font-face {
   font-family: "display";
   src: url("./assets/fonts/BUGATTIDisplay-Regular.woff2");
@@ -13,18 +44,4 @@
 @theme {
   --font-family-display: "display", sans-serif;
   --font-family-mono: "monospace", monospace;
-}
-
-::-webkit-scrollbar {
-  width: 6px;
-}
-
-::-webkit-scrollbar-track {
-  background: #2c2c2c;
-}
-
-::-webkit-scrollbar-thumb {
-  background: #888888;
-  border-radius: 6px;
-  border: 2px solid #a5a2a2;
 }

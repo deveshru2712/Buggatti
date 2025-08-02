@@ -1,5 +1,3 @@
-import { motion } from "motion/react";
-
 const Track = () => {
   return (
     <div className="pointer-events-none absolute inset-0 z-10 px-4 md:px-10 lg:px-12">
