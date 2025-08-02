@@ -16,7 +16,7 @@ const HeroSection = () => {
           <h2 className="font-family-display text-4xl md:text-5xl">
             THIS IS FOR ETERNITY
           </h2>
-          <button className="font-family-mono underline-offset-4hover:bg-white cursor-pointer rounded-full px-2.5 py-2 underline transition-colors duration-200 hover:bg-white hover:text-slate-900 md:border md:no-underline">
+          <button className="font-family-mono underline-offset-4hover:bg-white cursor-pointer rounded-full px-2.5 py-2 underline transition-colors duration-200 hover:bg-white hover:text-slate-900 hover:underline-offset-1 md:border md:no-underline">
             <span>DISCOVER THE BUGATTI TOURBILLON</span>
           </button>
         </motion.div>

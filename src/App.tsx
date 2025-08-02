@@ -3,6 +3,7 @@ import HeroSection from "./components/Hero/HeroSection";
 import Navbar from "./components/Navbar";
 import TrackSection from "./components/Track/TrackSection";
 import Lenis from "lenis";
+import MansionSection from "./components/Mansion/MansionSection";
 
 const App = () => {
   useEffect(() => {
@@ -29,7 +30,7 @@ const App = () => {
       <Navbar />
       <HeroSection />
       <TrackSection />
-      <div className="h-[333px]"></div>
+      <MansionSection />
     </div>
   );
 };

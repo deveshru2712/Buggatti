@@ -16,7 +16,7 @@ const TrackSection = () => {
   );
 
   return (
-    <section ref={container} className="">
+    <section ref={container} className="overflow-hidden">
       <motion.div
         style={{
           y: translateContent,
@@ -46,7 +46,10 @@ const TrackSection = () => {
                   Setting a new benchmark at 453.91 Km/h. A triumph of passion,
                   precision, and performance.
                 </span>
-                <a href="/" className="underline underline-offset-4">
+                <a
+                  href="/"
+                  className="underline underline-offset-4 hover:underline-offset-2"
+                >
                   WATCH THE RECORD
                 </a>
               </div>
