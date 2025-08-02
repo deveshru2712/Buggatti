@@ -5,7 +5,7 @@ const Track = () => {
     <div className="absolute inset-0 z-10 cursor-pointer px-4 md:px-10 lg:px-12">
       <div className="overflow-hidden rounded-md">
         <motion.video
-          src="/track.mp4"
+          src="video/track.mp4"
           autoPlay
           muted
           controls={false}

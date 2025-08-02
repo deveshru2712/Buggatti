@@ -9,7 +9,7 @@ const QuoteSection = () => {
       className="my-20 h-full w-full overflow-hidden px-4 text-white md:px-8"
     >
       <img
-        src="quote.svg"
+        src="svg/quote.svg"
         alt="quote"
         className="object-contain"
         style={{ filter: "invert(1) brightness(2)" }}

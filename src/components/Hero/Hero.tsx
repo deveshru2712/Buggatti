@@ -13,7 +13,7 @@ const Hero = () => {
       className="absolute inset-0 -top-30 z-10 cursor-pointer"
     >
       <motion.video
-        src="./hero_video.mp4"
+        src="video/hero_video.mp4"
         autoPlay
         muted
         controls={false}
