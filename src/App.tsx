@@ -25,10 +25,11 @@ const App = () => {
   }, []);
 
   return (
-    <div className="min-h-screen bg-black">
+    <div className="min-h-screen overflow-x-hidden bg-black">
       <Navbar />
       <HeroSection />
       <TrackSection />
+      <div className="h-[333px]"></div>
     </div>
   );
 };

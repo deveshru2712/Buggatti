@@ -10,14 +10,16 @@ const Hero = () => {
         delay: 0.1,
         ease: "easeInOut",
       }}
-      className="pointer-events-none absolute inset-0 -top-30 z-10"
+      className="absolute inset-0 -top-30 z-10 cursor-pointer"
     >
-      <video
+      <motion.video
         src="./hero_video.mp4"
         autoPlay
         muted
         controls={false}
         loop
+        whileHover={{ scale: 1.05 }}
+        transition={{ duration: 0.3, ease: "easeOut" }}
         className="h-[650px] w-full object-cover md:h-[600px]"
       />
     </motion.div>

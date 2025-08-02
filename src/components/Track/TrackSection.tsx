@@ -1,10 +1,26 @@
+import { useRef } from "react";
 import Track from "./Track";
-import { motion } from "motion/react";
+import { motion, useScroll, useSpring, useTransform } from "motion/react";
 
 const TrackSection = () => {
+  const container = useRef<HTMLDivElement>(null);
+
+  const { scrollYProgress } = useScroll({
+    target: container,
+    offset: ["start end", "end start"],
+  });
+
+  const translateContent = useSpring(
+    useTransform(scrollYProgress, [0, 1], [0, 50]),
+    { stiffness: 100, mass: 1, damping: 30 },
+  );
+
   return (
-    <section>
+    <section ref={container} className="">
       <motion.div
+        style={{
+          y: translateContent,
+        }}
         initial={{ scale: 0.8, opacity: 0, y: 50, filter: `blur(10px)` }}
         animate={{ scale: 1, opacity: 100, y: 0, filter: `blur(0px)` }}
         transition={{
@@ -16,7 +32,7 @@ const TrackSection = () => {
       >
         {/* placeholder div */}
         <div className="h-[550px] w-full"></div>
-        <div className="absolute top-1/2 z-20 flex items-center justify-center px-6 text-white md:top-2/3 md:-translate-y-1/4 md:px-16">
+        <div className="pointer-events-none absolute top-1/2 z-20 flex items-center justify-center px-6 text-white md:top-2/3 md:-translate-y-1/4 md:px-16">
           <div className="flex grid-cols-3 flex-col gap-3 md:grid">
             <div className="col-span-2">
               <h2 className="font-family-display text-3xl md:text-6xl">

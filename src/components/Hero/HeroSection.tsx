@@ -11,7 +11,7 @@ const HeroSection = () => {
           initial={{ filter: `blur(20px)`, y: 10 }}
           animate={{ filter: `blur(0px)`, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="absolute top-1/2 z-20 flex w-full -translate-y-1/2 flex-col items-center justify-center gap-1 text-white md:gap-2"
+          className="pointer-events-none absolute top-1/2 z-20 flex w-full -translate-y-1/2 flex-col items-center justify-center gap-1 text-white md:gap-2"
         >
           <h2 className="font-family-display text-4xl md:text-5xl">
             THIS IS FOR ETERNITY
