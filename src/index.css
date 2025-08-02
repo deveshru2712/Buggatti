@@ -41,6 +41,11 @@ html.lenis body {
   src: url("./assets/fonts/BUGATTIMonospace-Regular.woff2");
 }
 
+@font-face {
+  font-family: "regular";
+  src: url("./assets/fonts/BUGATTIText-Regular.woff2");
+}
+
 @theme {
   --font-family-display: "display", sans-serif;
   --font-family-mono: "monospace", monospace;

@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar";
 import TrackSection from "./components/Track/TrackSection";
 import Lenis from "lenis";
 import MansionSection from "./components/Mansion/MansionSection";
+import QuoteSection from "./components/Quote/QuoteSection";
 
 const App = () => {
   useEffect(() => {
@@ -31,6 +32,7 @@ const App = () => {
       <HeroSection />
       <TrackSection />
       <MansionSection />
+      <QuoteSection />
     </div>
   );
 };
