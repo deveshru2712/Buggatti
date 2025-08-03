@@ -6,6 +6,7 @@ import Lenis from "lenis";
 import MansionSection from "./components/Mansion/MansionSection";
 import QuoteSection from "./components/Quote/QuoteSection";
 import CarSection from "./components/Car catalog/CarSection";
+import CraftSection from "./components/Craft/CraftSection";
 
 const App = () => {
   useEffect(() => {
@@ -35,6 +36,7 @@ const App = () => {
       <MansionSection />
       <QuoteSection />
       <CarSection />
+      <CraftSection />
     </div>
   );
 };
