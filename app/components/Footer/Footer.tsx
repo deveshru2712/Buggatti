@@ -10,7 +10,6 @@ const Footer = () => {
   return (
     <div className="bg-neutral-800/50 px-4 py-24 text-white md:px-8 lg:px-12">
       <div className="font-family-mono grid grid-cols-2 items-start justify-around gap-4 md:grid-cols-4">
-        {/* HYPER SPORTS CAR */}
         <div className="flex flex-col space-y-2">
           <span className="text-neutral-500">HYPER SPORTS CAR</span>
           <ul className="flex flex-col gap-1">
@@ -22,7 +21,6 @@ const Footer = () => {
           </ul>
         </div>
 
-        {/* LA MARQUE */}
         <div className="flex flex-col space-y-2">
           <span className="text-neutral-500">LA MARQUE</span>
           <ul className="flex flex-col gap-1">
@@ -34,7 +32,6 @@ const Footer = () => {
           </ul>
         </div>
 
-        {/* LIFESTYLE */}
         <div className="flex flex-col space-y-2">
           <span className="text-neutral-500">LIFESTYLE</span>
           <ul className="flex flex-col gap-1">
@@ -46,7 +43,6 @@ const Footer = () => {
           </ul>
         </div>
 
-        {/* CUSTOMER SERVICE */}
         <div className="flex flex-col space-y-2">
           <span className="text-neutral-500">CUSTOMER SERVICE</span>
           <ul className="flex flex-col gap-1">
@@ -59,9 +55,8 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* Legal and Language section - matching your original structure */}
-      <div className="font-family-mono mt-12 grid grid-cols-2 gap-5">
-        <div className="flex flex-col gap-2">
+      <div className="font-family-mono mt-12 grid grid-cols-3 gap-5 ">
+        <div className="flex flex-col gap-2 col-span-2">
           <h2>© 2025 BUGATTI Automobiles S.A.S.</h2>
           <div className="overflow-x-auto">
             <ul className="flex flex-wrap items-center gap-x-4 gap-y-2">
