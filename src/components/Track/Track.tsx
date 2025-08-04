@@ -11,7 +11,7 @@ const Track = () => {
           controls={false}
           loop
           className="h-[500px] w-full rounded-md object-cover"
-          whileHover={{ scale: 1.03 }}
+          whileHover={{ scale: 1.04 }}
           transition={{ duration: 0.3, ease: "easeOut" }}
         />
       </div>

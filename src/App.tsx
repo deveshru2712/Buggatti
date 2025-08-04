@@ -1,12 +1,15 @@
-import { useEffect } from "react";
-import HeroSection from "./components/Hero/HeroSection";
-import Navbar from "./components/Navbar";
-import TrackSection from "./components/Track/TrackSection";
+import { lazy, useEffect } from "react";
+
+const HeroSection = lazy(() => import("./components/Hero/HeroSection"));
+const Navbar = lazy(() => import("./components/Navbar"));
+const TrackSection = lazy(() => import("./components/Track/TrackSection"));
+const MansionSection = lazy(
+  () => import("./components/Mansion/MansionSection"),
+);
+const QuoteSection = lazy(() => import("./components/Quote/QuoteSection"));
+const CarSection = lazy(() => import("./components/Car catalog/CarSection"));
+const CraftSection = lazy(() => import("./components/Craft/CraftSection"));
 import Lenis from "lenis";
-import MansionSection from "./components/Mansion/MansionSection";
-import QuoteSection from "./components/Quote/QuoteSection";
-import CarSection from "./components/Car catalog/CarSection";
-import CraftSection from "./components/Craft/CraftSection";
 
 const App = () => {
   useEffect(() => {
