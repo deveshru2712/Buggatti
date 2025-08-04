@@ -10,7 +10,7 @@ const Navbar = () => {
       </div>
       <Link
         href="/"
-        className="font-family-display cursor-pointer text-4xl tracking-wide text-white"
+        className="font-display cursor-pointer text-4xl tracking-wide text-white"
       >
         BUGATTI
       </Link>

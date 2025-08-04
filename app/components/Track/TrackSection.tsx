@@ -37,7 +37,7 @@ const TrackSection = () => {
         <div className="pointer-events-none absolute top-1/2 z-20 flex items-center justify-center px-6 text-white md:top-2/3 md:-translate-y-1/4 md:px-16">
           <div className="flex grid-cols-3 flex-col gap-3 md:grid">
             <div className="col-span-2">
-              <h2 className="font-family-display text-3xl md:text-6xl">
+              <h2 className="font-display text-3xl md:text-6xl">
                 <span className="mr-2 md:mr-3">A</span> RECORD-BREAKING <br />{" "}
                 FORCE OF NATURE
               </h2>

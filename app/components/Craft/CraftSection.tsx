@@ -11,7 +11,7 @@ const CraftSection = () => {
       className="space-y-12 p-6 md:px-16"
     >
       <div>
-        <h2 className="font-family-display text-3xl text-white md:text-5xl">
+        <h2 className="font-display text-3xl text-white md:text-5xl">
           BUGATTI Sur Mesure
         </h2>
         <span className="font-family-mono text-white">

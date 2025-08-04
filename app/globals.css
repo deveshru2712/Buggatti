@@ -1,5 +1,11 @@
 @import "tailwindcss";
 
+@layer utilities {
+  .font-display {
+    font-family: var(--font-display);
+  }
+}
+
 html.lenis,
 html.lenis body {
   height: auto;

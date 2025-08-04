@@ -10,10 +10,14 @@ export const metadata: Metadata = {
 
 const Bugatti_Display = localFont({
   src: [{ path: "../public/fonts/BUGATTIDisplay-Regular.woff2" }],
+  display: "swap",
+  variable: "--font-display",
 });
 
-const Buggatti_monospace = localFont({
+const Bugatti_monospace = localFont({
   src: [{ path: "../public/fonts/BUGATTIMonospace-Regular.woff2" }],
+  display: "swap",
+  variable: "--font-monospace",
 });
 
 export default function RootLayout({
@@ -25,7 +29,7 @@ export default function RootLayout({
     <html lang="en">
       <ReactLenis root>
         <body
-          className={` ${Bugatti_Display} ${Buggatti_monospace} antialiased overflow-x-hidden`}
+          className={`${Bugatti_Display.variable} ${Bugatti_monospace.className} antialiased overflow-x-hidden`}
         >
           {children}
         </body>
